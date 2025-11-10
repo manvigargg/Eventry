@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <!-- Sad Face Image (your own drawable) -->
+    <ImageView
+        android:id="@+id/noShowsIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_sad_face"
+        android:contentDescription="No shows icon"
+        android:scaleType="centerInside"
+        android:alpha="0.9" />
+
+    <!-- Message -->
+    <TextView
+        android:id="@+id/noShowsMessage"
+        android:layout_below="@id/noShowsIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sorry, no shows currently in your area"
+        android:textColor="#F40D0D"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="12dp" />
+
+    <!-- Notify Me Button -->
+    <Button
+        android:id="@+id/btnNotify"
+        android:layout_below="@id/noShowsMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Notify Me"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:backgroundTint="@color/deep"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="24dp" />
+
+</RelativeLayout>
+

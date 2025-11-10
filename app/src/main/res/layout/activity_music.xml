@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/music_title_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/deep"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/music_featured"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FEATURED"
+            android:textSize="14sp"
+            android:textColor="@color/blue"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Horizontal Scroll -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginTop="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clipToPadding="false"
+                android:clipChildren="false">
+
+                <!-- Card 1 -->
+                <FrameLayout
+                    android:id="@+id/card1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp">
+                    <include layout="@layout/item_music_card" />
+                </FrameLayout>
+
+                <!-- Card 2 -->
+                <FrameLayout
+                    android:id="@+id/card2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp">
+                    <include layout="@layout/item_music_card2" />
+                </FrameLayout>
+
+                <!-- Card 3 -->
+                <FrameLayout
+                    android:id="@+id/card3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <include layout="@layout/item_music_card3" />
+                </FrameLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+

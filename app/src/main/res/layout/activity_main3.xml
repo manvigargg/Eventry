@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    tools:context=".MainActivity"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Bar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/appTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="EVENTRY"
+                android:textColor="@color/deep"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"
+                android:contentDescription="Profile"
+                android:focusable="true"
+                android:padding="6dp"
+                android:src="@drawable/icon" />
+        </RelativeLayout>
+
+        <!-- Search Bar -->
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/search_bg"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:drawablePadding="8dp"
+            android:hint="Search events..."
+            android:padding="12dp" />
+
+        <!-- Explore Events Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="EVENTS FOR YOU"
+            android:textColor="@color/deep"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Grid for Event Categories -->
+        <GridLayout
+            android:id="@+id/categoryGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:rowOrderPreserved="false"
+            android:useDefaultMargins="true">
+
+            <!-- Music -->
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:layout_gravity="fill">
+
+                <ImageButton
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:background="@drawable/card_bg"
+                    android:contentDescription="Music"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/music" />
+            </FrameLayout>
+
+            <!-- Comedy -->
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:layout_gravity="fill">
+
+                <ImageButton
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:background="@drawable/card_bg"
+                    android:contentDescription="Comedy"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/comedy" />
+            </FrameLayout>
+
+            <!-- Sports -->
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:layout_gravity="fill">
+
+                <ImageButton
+                    android:id="@+id/button5"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:background="@drawable/card_bg"
+                    android:contentDescription="Sports"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sports" />
+            </FrameLayout>
+
+            <!-- Shows -->
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_margin="8dp"
+                android:layout_gravity="fill">
+
+                <ImageButton
+                    android:id="@+id/button6"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:background="@drawable/card_bg"
+                    android:contentDescription="Shows"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shows" />
+            </FrameLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+</ScrollView>

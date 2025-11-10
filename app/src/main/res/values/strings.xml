@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Eventry</string>
+    <string-array name="cities">
+        <item>Select your City</item>
+        <item>Mumbai</item>
+        <item>Chennai</item>
+        <item>Indore</item>
+        <item>Kolkata</item>
+        <item>Delhi</item>
+    </string-array>
+    <string-array name="bank_list">
+        <item>Select your bank</item>
+        <item>HDFC Bank</item>
+        <item>ICICI Bank</item>
+        <item>State Bank of India</item>
+        <item>Axis Bank</item>
+        <item>Kotak Mahindra Bank</item>
+    </string-array>
+
+
+</resources>

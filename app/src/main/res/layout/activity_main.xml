@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:gravity="center"
+android:background="@color/dark"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="24dp">
+
+<ImageView
+    android:src="@drawable/eventry"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:layout_marginBottom="16dp"
+    android:contentDescription="Eventry Logo"
+    android:layout_gravity="center" />
+
+<TextView
+    android:text="Login"
+    android:textColor="@color/blue"
+    android:textSize="24sp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="8dp" 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"/>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/logincard"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/email"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/button"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/deep"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+<TextView
+    android:id="@+id/textView"
+    android:text="Not a member? Sign Up"
+    android:textColor="@color/blue"
+    android:layout_marginTop="16dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_card_bg"
+    android:clipToOutline="true"
+    android:clickable="true"
+    android:focusable="true"
+    android:elevation="6dp">
+
+    <!-- Event Image -->
+    <ImageView
+        android:id="@+id/sports_image2"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/stadium2"
+        android:background="@drawable/top_rounded_image"
+        android:clipToOutline="true" />
+
+    <!-- Purple Banner -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        android:padding="6dp"
+        android:text="🎟 Early bird passes available!"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical" />
+
+    <!-- Info Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1E1E1E"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:clipToOutline="true">
+
+        <!-- Date + Bookmark -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sun, 16 Nov, 10:00 AM"
+                android:textColor="#B3B3B3"
+                android:textSize="13sp" />
+
+            <ImageButton
+                android:id="@+id/btn_save2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_bookmark_border"
+                android:contentDescription="Save Event"
+                app:tint="@android:color/white"/>
+        </LinearLayout>
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RCB v/s MI, IPL 2025"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp" />
+
+        <!-- Venue -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Holkar Stadium, Indore"
+            android:textColor="#CCCCCC"
+            android:textSize="13sp"
+            android:layout_marginTop="2dp" />
+
+        <!-- Price -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="₹1999 onwards"
+            android:textColor="@color/blue"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Book Button -->
+        <Button
+            android:id="@+id/btn_book_ticket2"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="Book Ticket"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/navy"
+            android:elevation="4dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="4dp"
+            android:padding="6dp" />
+    </LinearLayout>
+</LinearLayout>

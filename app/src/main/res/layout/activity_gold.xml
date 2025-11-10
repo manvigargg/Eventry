@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#121212"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/headerTitle"
+            android:text="Concert Title"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/headerDetails"
+            android:text="Event details here"
+            android:textColor="#A8A8A8"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Choose Tickets -->
+    <TextView
+        android:id="@+id/chooseTickets"
+        android:layout_below="@id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Tickets"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+
+    <!-- Ticket container -->
+    <LinearLayout
+        android:id="@+id/ticketContainer"
+        android:layout_below="@id/chooseTickets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <!-- Ticket Card 1 -->
+        <LinearLayout
+            android:id="@+id/ticket1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ticket_card_bg"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:text="Phase 1 | Gold"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/price1"
+                android:text="₹0"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="• Access to Gold seating zone.\n• Seats closer to stage.\n• Complimentary drink included."
+                android:textColor="#A8A8A8"
+                android:textSize="13sp"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- Add Button -->
+            <Button
+                android:id="@+id/btnAdd1"
+                android:layout_width="80dp"
+                android:layout_height="38dp"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/blue"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp" />
+
+            <!-- Counter Layout -->
+            <LinearLayout
+                android:id="@+id/counterLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/counter_bg"
+                android:paddingHorizontal="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/btnMinus1"
+                    android:text="-"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:paddingHorizontal="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/ticketCount1"
+                    android:text="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:paddingHorizontal="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/btnPlus1"
+                    android:text="+"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:paddingHorizontal="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Ticket Card 2 -->
+        <LinearLayout
+            android:id="@+id/ticket2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ticket_card_bg"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:text="Phase 2 | Gold"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/price2"
+                android:text="₹0"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="• Access to VIP Gold seating zone.\n• Seats closest to stage.\n• Complimentary drinks and food included."
+                android:textColor="#A8A8A8"
+                android:textSize="13sp"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- Add Button -->
+            <Button
+                android:id="@+id/btnAdd2"
+                android:layout_width="80dp"
+                android:layout_height="38dp"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/blue"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp" />
+
+            <!-- Counter Layout -->
+            <LinearLayout
+                android:id="@+id/counterLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/counter_bg"
+                android:paddingHorizontal="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/btnMinus2"
+                    android:text="-"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:paddingHorizontal="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/ticketCount2"
+                    android:text="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:paddingHorizontal="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/btnPlus2"
+                    android:text="+"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:paddingHorizontal="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Bottom checkout bar -->
+    <LinearLayout
+        android:id="@+id/bottomCheckout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#1E1E1E"
+        android:paddingHorizontal="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/totalTickets"
+            android:text="0 tickets"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/totalPrice"
+            android:text="₹0"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnCheckout"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:text="Checkout"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/deep"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
+

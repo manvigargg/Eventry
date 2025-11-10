@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/paymentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAYMENT"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Order Summary -->
+        <LinearLayout
+            android:id="@+id/orderSummary"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1E1E1E"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:text="Order Summary"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <TextView
+                android:id="@+id/orderAmount"
+                android:text="Order Amount: ₹ 0.00"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <TextView
+                android:id="@+id/gstAmount"
+                android:text="GST (18%): ₹ 0.00"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <TextView
+                android:id="@+id/bookingFee"
+                android:text="Booking Fee: ₹ 49.00"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#444" />
+
+            <TextView
+                android:id="@+id/grandTotal"
+                android:text="Grand Total: ₹ 49.00"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Coupon Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/couponInput"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:hint="Enter Coupon Code"
+                android:paddingHorizontal="10dp"
+                android:background="@android:color/white"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:inputType="textCapCharacters" />
+
+            <Button
+                android:id="@+id/applyCouponBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@color/navy"
+                android:text="Apply"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Pay via UPI -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1E1E1E"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:text="Pay via UPI"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <EditText
+                android:id="@+id/upiInput"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="name@bank"
+                android:background="@color/white"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+
+        <!-- Credit / Debit Card -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1E1E1E"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:text="Credit / Debit Card"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <EditText
+                android:id="@+id/cardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Card Number"
+                android:background="@color/white"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:maxLength="16"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/expiryDate"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:hint="MM/YY"
+                    android:background="@color/white"
+                    android:paddingHorizontal="10dp"
+                    android:textColor="@color/black"
+                    android:inputType="text"
+                    android:layout_marginEnd="8dp" />
+
+                <EditText
+                    android:id="@+id/cvv"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:hint="CVV"
+                    android:background="@color/white"
+                    android:paddingHorizontal="10dp"
+                    android:textColor="@color/black"
+                    android:inputType="numberPassword" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Net Banking -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1E1E1E"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:text="Net Banking"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+
+            <Spinner
+                android:id="@+id/netBankingSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:spinnerMode="dropdown"
+                android:popupBackground="@color/white"
+                android:paddingHorizontal="10dp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Pay Now Button -->
+        <Button
+            android:id="@+id/payNowBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Pay Now"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="@color/navy"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+</ScrollView>

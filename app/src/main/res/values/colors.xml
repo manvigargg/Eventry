@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="babypink">#F6DBE4</color>
+    <color name="pink">#EFBDCE</color>
+    <color name="pink_primary">#FF1493</color>
+    <color name="pink_dark">#C71585</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_light">#F5F5F5</color>
+    <color name="navy">#021054</color>
+    <color name="pinky">#FFE5EC</color>
+    <color name="pink_medium">#FFB6C1</color>
+    <color name="charmine">#D63384</color>
+    <color name="blue">#33A7EA</color>
+    <color name="deep">#004AAD</color>
+    <color name="black">#111111</color>
+    <color name="purple">#9C27B0</color>
+    <color name="gold">#E6AF0B</color>
+    <color name="dark">#000000</color>
+
+
+</resources>

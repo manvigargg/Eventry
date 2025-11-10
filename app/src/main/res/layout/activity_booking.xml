@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="start"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Event Title -->
+        <TextView
+            android:id="@+id/eventTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunidhi Chauhan | Indore"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="4dp"
+            android:textAlignment="center" />
+
+        <!-- Event Details -->
+        <TextView
+            android:id="@+id/eventDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fri, 21 Nov | 6 PM onwards | The Park, Indore"
+            android:textColor="#BBBBBB"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center" />
+
+        <!-- Banner -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6C4EFF"
+            android:text="⚠️ Unlock exclusive offers by pre-booking."
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:padding="12dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Stage (non-clickable) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="STAGE"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/section_stage_bg"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Gold -->
+        <LinearLayout
+            android:id="@+id/goldLayout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/section_gold_bg"
+            android:layout_marginBottom="14dp">
+            <TextView
+                android:text="GOLD"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+
+        <!-- Silver -->
+        <LinearLayout
+            android:id="@+id/silverLayout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/section_silver_bg"
+            android:layout_marginBottom="14dp">
+            <TextView
+                android:text="SILVER"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+
+        <!-- Bronze -->
+        <LinearLayout
+            android:id="@+id/bronzeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/section_bronze_bg"
+            android:layout_marginBottom="24dp">
+            <TextView
+                android:text="BRONZE"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+
+        <!-- Checkbox Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="40dp">
+
+
+            <CheckBox
+                android:id="@+id/termsCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I want to pre-book the tickets."
+                android:textColor="@android:color/white"
+                android:buttonTint="@android:color/holo_purple"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
